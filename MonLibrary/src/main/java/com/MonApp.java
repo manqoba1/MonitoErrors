@@ -1,4 +1,4 @@
-package com.com.boha.monitor.library;
+package com;
 
 import android.app.ActivityManager;
 import android.app.Application;
@@ -8,11 +8,11 @@ import android.util.Log;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.com.boha.monitor.library.util.Statics;
-import com.com.boha.monitor.library.toolbox.BitmapLruCache;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.stream.HttpUrlGlideUrlLoader;
+import com.com.boha.monitor.library.toolbox.BitmapLruCache;
+import com.com.boha.monitor.library.util.Statics;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
@@ -86,7 +86,6 @@ public class MonApp extends Application {
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
                 .build();
-
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext())
                 .defaultDisplayImageOptions(defaultOptions)
                 .build();

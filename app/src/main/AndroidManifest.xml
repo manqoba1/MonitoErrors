@@ -9,7 +9,7 @@
         android:targetSdkVersion="19" />
     <application
         android:allowBackup="true"
-        android:name="com.com.boha.monitor.library.MonApp"
+        android:name="com.MonApp"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
