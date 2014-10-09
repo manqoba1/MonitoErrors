@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige_pale"
+        android:padding="5dp"
+        android:id="@+id/PP_lay1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BlackSquare"
+            android:text="00"
+            android:id="@+id/PP_count"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/PP_package"
+            android:layout_marginLeft="10dp"
+            style="@style/Title2TextStyleBlue"
+            android:layout_toEndOf="@+id/PP_count"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/PP_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/PP_date"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/PP_package"
+            android:layout_alignLeft="@+id/PP_package"
+            android:layout_alignStart="@+id/PP_package" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PP_lay1"
+        android:background="@color/purple"
+        android:padding="5dp"
+        android:id="@+id/PP_lay2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/PP_brand"
+            style="@style/LargerTextStyleBold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/PP_model"
+            style="@style/LargerTextStyleBold"
+            android:layout_alignTop="@+id/PP_brand"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PP_lay2"
+        android:padding="5dp"
+        android:background="@color/beige_pale"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Version: "
+            style="@style/LargerTextStyleBold"
+            android:id="@+id/PP_version"
+            android:textColor="@color/green"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:padding="5dp"
+        android:id="@+id/PP_stack"
+        style="@style/TextStyleRedSmall"
+        android:background="@color/grey"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:padding="5dp"
+        android:id="@+id/PP_logCat"
+        android:background="@color/white"
+        android:layout_below="@+id/PP_stack"
+        android:layout_alignLeft="@+id/PP_stack"
+        android:layout_alignStart="@+id/PP_stack" />
+
+
+</RelativeLayout>
